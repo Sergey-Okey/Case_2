@@ -12,8 +12,8 @@
 }
 
 body {
-	width: 1440px;
-	margin: 0;
+	width: 90vw;
+	margin: 0 auto;
 	font-family: 'Poppins', sans-serif;
 	font-size: 20px;
 	background-color: #000;
@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-	width: 80%;
+	width: 70%;
 	margin: 0 auto;
 }
 
@@ -37,7 +37,9 @@ h1 {
 	line-height: 76px;
 	letter-spacing: 0.8px;
 	margin: 0;
-	margin-bottom: 10px
+	margin-bottom: 10px;
+	width: 632px;
+
 }
 
 li {
@@ -113,15 +115,22 @@ nav {
 	border-radius: 10px;
 }
 
-/*Section Greeting*/
-
-.getting h1 {
-	text-wrap: nowrap;
+main .back-greeting {
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	height: 1100px;
+	right: 0;
+	z-index: -1;
 }
 
+/*Section Greeting*/
+
 .greeting {
-	display: inline-flex;
+	width: 100%;
+	display: flex;
 	margin-top: 80px;
+	justify-content: space-between;
 }
 
 .greeting-content div {
@@ -138,8 +147,13 @@ nav {
 	font-weight: 600;
 }
 
+.greeting-content {
+	margin-left: 112px
+}
+
 .greeting img {
-	margin-left: 80px;
+	width: 600px;
+	flex-shrink: 0;
 }
 
 .greeting-button {
@@ -152,23 +166,13 @@ nav {
 	font-style: normal;
 	font-weight: 400;
 	line-height: 110%;
+	width: 610px;
 }
-
-.greeting svg {
-	position: absolute;
-	z-index: -1;
-}
-
-.back-greeting {
-	position: absolute;
-	top: 0;
-	z-index: -2;
-}
-
 
 .back-greeting img {
 	position: absolute;
-	width: 1440px;
+	width: 100%;
+	left: 0;
 }
 
 /*Section stages*/
@@ -176,7 +180,7 @@ nav {
 .stages {
 	display: flex;
 	justify-content: center;
-	margin-top: 100px;
+	margin-top: 500px;
 }
 
 .stages-content h2 {
@@ -235,9 +239,10 @@ nav {
 
 .back-catalog {
 	position: absolute;
-	top: 40%;
+	top: 0%;
+	width: 100vw;
+	right: 0;
 	left: 0;
-	width: 1440px;
 	z-index: -1;
 }
 
@@ -256,8 +261,15 @@ nav {
 	background: rgba(0, 0, 0, 0.30);
 	padding: 45px;
 	border-radius: 30px;
-	width: 100%;
+	width: 90%;
+	margin: 0 auto;
 	justify-content: center;
+}
+
+.box-content {
+	display: flex;
+	flex-direction: column;
+
 }
 
 .box-content h3 {
@@ -281,7 +293,7 @@ nav {
 
 .box-column {
 	display: flex;
-	margin: 0;
+	margin: 0 auto;
 }
 
 .catalog-box_2 {
@@ -396,13 +408,29 @@ nav {
 
 /* Article Forma */
 
+label {
+	margin-bottom: 10px;
+	color: #FFF;
+	font-family: Inter;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 100%;
+	letter-spacing: -0.18px;
+}
+
+.forma {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .forma h1 {
-	font-size: 60px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 64px;
+	width: 1009px;
 	text-align: center;
-	margin: 100px 0;
+	font-size: 70px;
+	font-weight: 700;
+	margin: 100px auto;
 }
 
 .forma input {
@@ -414,6 +442,12 @@ nav {
 	padding: 5px 20px;
 	backdrop-filter: blur(5px);
 	background-color: rgba(170, 168, 168, 0.212);
+	color: #FFF;
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 100%;
+	letter-spacing: -0.18px;
 }
 
 .forma-content {
@@ -446,7 +480,7 @@ nav {
 
 .back-forma {
 	position: absolute;
-	top: 4800px;
+	top: 0;
 	z-index: -1;
 }
 
